@@ -24,8 +24,9 @@ class TowersAPI {
 		$this->calculateDistancesToTowers();
 		$this->filterToNearest(15);
 
-		print_r ($this->towersArray); // debug
+//		print_r ($this->towersArray); // debug
 
+		$this->sendData($this->towersArray);
 	}
 
 	// Purpose of this to speed things up by not sending all the towers to Haversine calculation
@@ -50,19 +51,11 @@ class TowersAPI {
 
 	public function calculateDistancesToTowers()
 	{
-		$time1 = microtime(TRUE);
-
 		foreach ($this->towersArray as $id => $tower)
 		{
 			$distance = $this->haversine($this->lat, $this->lon, $tower['lat'], $tower['lon']);
 			$this->towersArray[$id]['distance'] = $distance;
 		}
-
-		$time2 = microtime(TRUE);
-		$time = $time2 - $time1;
-
-		echo "calc took " . ($time * 1000) . " milliseconds";
-
 	}
 
 	public function filterToNearest($limit = 10)
