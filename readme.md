@@ -15,3 +15,11 @@ Huomioita
 =========
 
 Raakadatan pitää olla UTF-8 -muodossa, muuten json_encode epäonnistuu
+
+
+Ajatuksia
+=========
+
+Geocoding
+Tornin tyyppi
+
