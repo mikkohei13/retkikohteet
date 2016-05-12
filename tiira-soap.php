@@ -10,27 +10,40 @@ Tool to get data from Tiira-API (SOAP)
 require_once "../../tiira-api.php";
 
 
-$clientParams = Array();
-$clientParams['login'] = $httpLogin;
-$clientParams['password'] = $httpPassword;
+$clientOptions = Array();
+$clientOptions['login'] = $httpLogin;
+$clientOptions['password'] = $httpPassword;
+$clientOptions['trace'] = TRUE;
 
-$client = new SoapClient("http://www.tiira.fi/ws/ws/v2/soapserver.php?wsdl", $clientParams);
-
+$client = new SoapClient("http://www.tiira.fi/ws/ws/v2/soapserver.php?wsdl", $clientOptions);
 
 $params = Array();
 $params['sovellusavain'] = $apiKey;
 $params['tunnus'] = $username;
-$params['varmenne'] = $password;
+$params['varmenne'] = $auth;
 
 $params['kunta'] = "";
 $params['nimi'] = "";
 $params['yhdistys'] = "";
 
-// print_r ($params);
+print_r ($params);
 
-$result = $client->haeTornit($params); // array('iTopN'=>5)
+try
+{
+	$result = $client->haeTornit($params); // array('iTopN'=>5)
+}
+catch (Exception $e)
+{
+    echo 'Caught exception: ',  $e->getMessage(), "\n";
+	echo "REQUEST:\n" . $client->__getLastRequest() . "\n";
+	echo "REQUEST HEADERS:\n" . $client->__getLastRequestHeaders() . "\n";
+	echo "RESPONSE:\n" . $client->__getLastRequest() . "\n";
+	echo "RESPONSE HEADERS:\n" . $client->__getLastResponseHeaders() . "\n";
+
+}
 
 print_r ($result);
+
 
 echo "\n<br />END";
 
