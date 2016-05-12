@@ -22,7 +22,7 @@ class TowersAPI {
 
 		$this->preFilterTowers();
 		$this->calculateDistancesToTowers();
-		$this->sortByDistance();
+		$this->filterToNearest(15);
 
 		print_r ($this->towersArray); // debug
 
@@ -31,7 +31,7 @@ class TowersAPI {
 	// Purpose of this to speed things up by not sending all the towers to Haversine calculation
 	public function preFilterTowers()
 	{
-		$thresholdDegrees = 1; // 1 seems to be good value for sparsely towered ares in Finland, resulting in about 10 towers
+		$thresholdDegrees = 1; // >=1 seems to be good value for sparsely towered ares in Finland, resulting in about 10 towers
 
 		foreach ($this->towersArray as $id => $tower)
 		{
@@ -50,18 +50,28 @@ class TowersAPI {
 
 	public function calculateDistancesToTowers()
 	{
+		$time1 = microtime(TRUE);
+
 		foreach ($this->towersArray as $id => $tower)
 		{
 			$distance = $this->haversine($this->lat, $this->lon, $tower['lat'], $tower['lon']);
 			$this->towersArray[$id]['distance'] = $distance;
 		}
+
+		$time2 = microtime(TRUE);
+		$time = $time2 - $time1;
+
+		echo "calc took " . ($time * 1000) . " milliseconds";
+
 	}
 
-	public function sortByDistance()
+	public function filterToNearest($limit = 10)
 	{
-		usort($this->towersArray, function($a, $b) {
+		uasort($this->towersArray, function($a, $b) {
     		return $a['distance'] - $b['distance'];
 		});
+
+		$this->towersArray = array_slice($this->towersArray, 0, $limit, TRUE);
 	}
 
 	/**
