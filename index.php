@@ -44,6 +44,11 @@
         <div id="message-container"></div>
 
         <div id="main-container">
+            <h1>Lähimmät lintutornit</h1>
+            <ul id="towers">
+                
+            </ul>
+
         </div> <!-- #main-container -->
 
         <div id="share-container">

@@ -55,6 +55,27 @@ function determineLocation(event)
       console.log(towersJSON);
       console.log("Success!");
       $( "#error-container" ).html("");
+
+      // Update list
+      var towerHTML;
+      var distance;
+      for(var towerID in towersJSON)
+      {
+           console.log(towerID);
+
+           distance = Math.round(towersJSON[towerID].distance / 1000);
+
+           towerHTML = "<li>" + towersJSON[towerID].muni + ", " + towersJSON[towerID].tower + " " + distance + " km</li>";
+
+           console.log(towersJSON[towerID].muni);
+           console.log(towersJSON[towerID].tower);
+           console.log(towersJSON[towerID].distance);
+
+          $("#towers").append(towerHTML);
+
+      }
+
+
 //      $( "#main-container" ).load( "allspecies.php?grid=" + towersJSON.N + ":" + towersJSON.E );
 
 //      logData.N = towersJSON.N;
