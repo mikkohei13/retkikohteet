@@ -1,0 +1,194 @@
+
+body
+{
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+
+#header-container
+{
+	background-color: #1976D2;
+	color: #fff;
+	/*
+	position: fixed;
+	width: 100%;
+	*/
+}
+
+#header-container h2
+{
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+#header-container a
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+#logo
+{
+	width: 40px;
+	height: 40px;
+	margin: -10px 5px -3px 0px;
+}
+
+#header-container,
+#help-container,
+#main-container,
+#share-container,
+#footer-container
+{
+	padding: 10px;
+}
+
+#share-container
+{
+	background-color: #8CED90;
+}
+
+#error-container div,
+#message-container div
+{
+	background-color: #ffc;
+	padding: 10px;
+}
+
+.additional
+{
+	color: #999;
+}
+
+.status-container
+{
+	clear: both;
+ 	margin-bottom: 10px;
+ 	border-top: 4px solid #BBDEFB;
+}
+
+#help-container
+{
+	display: none;
+	background-color: #4CAF50; /* Material design */
+	background-color: #8CED90; /* lighter */
+}
+
+
+
+#helplink
+{
+	display: block;
+	position: absolute;
+	right: 10px;
+	top: 8px;
+	padding: 3px;
+	font-weight: bold;
+	border: 2px solid white;
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+
+.species
+{
+	position: relative;
+	float: left;
+	width: 220px;
+	max-width: 50%;
+	height: 180px;
+	overflow: hidden;
+}
+
+.speciesImage
+{
+	display: block;
+	width: 200px;
+	height: 133px;
+	overflow: hidden;
+	background-color: #ccc;
+}
+
+.icon
+{
+	width: 25px;
+	height: 25px;
+}
+
+.species .icon
+{
+	position: absolute;
+	top: 120px;
+	left: 2px;
+}
+
+.species .bluestar
+{
+	left: 27px;
+}
+
+.species .greenstar
+{
+	left: 54px;
+}
+
+h4
+{
+	margin: 10px 0 0 0;
+}
+
+h2
+{
+	clear: both;
+}
+
+#footer-container
+{
+	background-color: #2196F3;
+	color: #fff;
+}
+
+#footer-container a
+{
+	color: #BBDEFB;
+}
+
+
+#footer-container h3,
+#footer-container h4,
+#footer-container p
+{
+	margin: 0 0 5px 0;
+}
+
+#footer-container #credits
+{
+	margin: 10px -10px -10px -10px;
+	padding: 10px;
+	background-color: #1976D2;
+}
+
+
+
+@media only screen and (max-width: 400px) {
+
+	.species .icon
+	{
+		top: 87px;
+	}
+	.speciesImage
+	{
+		width: 150px;
+		height: 100px;
+	}
+	.speciesImage img
+	{
+		width: 150px;
+		height: 100px;
+	}
+
+}
