@@ -29,7 +29,7 @@ class TowersAPI {
 		$this->sendData($this->towersArray);
 	}
 
-	// Purpose of this to speed things up by not sending all the towers to Haversine calculation
+	// Purpose of this to speed things up by not sending all the towers to Haversine calculation and sorting
 	public function preFilterTowers()
 	{
 		$thresholdDegrees = 1; // >=1 seems to be good value for sparsely towered ares in Finland, resulting in about 10 towers
