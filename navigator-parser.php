@@ -34,7 +34,7 @@ function handleTower($row)
 	$lat = trim($cells[1]);
 
 	$muni = trim($cells[2]);
-	@$tower = trim($cells[3]); // suppressed errors from missing comma between muni and tower
+	$tower = trim($cells[3]); // suppressed errors from missing comma between muni and tower
 
 	$tempMuni = trim($muni, "\"");
 	$tempTower = trim($tower, "\"");
