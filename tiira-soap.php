@@ -15,7 +15,7 @@ $clientOptions['login'] = $httpLogin;
 $clientOptions['password'] = $httpPassword;
 $clientOptions['trace'] = TRUE;
 
-$client = new SoapClient("http://www.tiira.fi/ws/ws/v2/soapserver.php?wsdl", $clientOptions);
+$client = new SoapClient("http://testi.tiira.fi/ws/ws/v2/soapserver.php?wsdl", $clientOptions);
 
 $params = Array();
 $params['sovellusavain'] = $apiKey;
