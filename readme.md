@@ -20,11 +20,14 @@ Huomioita
 TODO
 ====
 
+- Styles
 - Oikea data
 - Twitter & Facebook
 - Google Analytics
 - Tietosuojailmoitus
 - Logging?
+
+RELEASE
 - Ristiinlinkitys kotiseudun lintujen kanssa
 
 
