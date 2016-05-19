@@ -45,9 +45,9 @@
 
         <div id="main-container">
             <h1>Lähimmät lintutornit</h1>
-            <ul id="towers">
+            <ol id="towers">
                 
-            </ul>
+            </ol>
 
         </div> <!-- #main-container -->
 

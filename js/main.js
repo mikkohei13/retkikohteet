@@ -59,19 +59,21 @@ function determineLocation(event)
       // Update list
       var towerHTML;
       var distance;
+      var maplink;
       for(var towerID in towersJSON)
       {
            console.log(towerID);
 
            distance = Math.round(towersJSON[towerID].distance / 1000);
 
-           towerHTML = "<li>" + towersJSON[towerID].muni + ", " + towersJSON[towerID].tower + " " + distance + " km</li>";
+           towerHTML = towersJSON[towerID].muni + ", " + towersJSON[towerID].tower + " " + distance + " km";
+           maplink = "<a href='https://www.google.fi/maps/dir/" + logData.latitude + "," + logData.longitude + "/" + towersJSON[towerID].lat + "," + towersJSON[towerID].lon + "/'>reitti</a>";
 
            console.log(towersJSON[towerID].muni);
            console.log(towersJSON[towerID].tower);
            console.log(towersJSON[towerID].distance);
 
-          $("#towers").append(towerHTML);
+          $("#towers").append("<li>" + towerHTML + " " + maplink + "</li>");
 
       }
 
