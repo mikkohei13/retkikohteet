@@ -7,7 +7,7 @@ Tool to get data from Tiira-API (SOAP)
 
 // http://www.vankouteren.eu/blog/2009/03/simple-php-soap-example/
 
-require_once "../../tiira-api.php";
+require_once "../../retkikohteet-secret.php";
 if ($_GET['secret'] != $localSecret)
 {
 	exit("secret parameter needed");
