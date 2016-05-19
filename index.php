@@ -64,7 +64,7 @@
 
 
                 <h3>Tietolähteet</h3>
-
+                <p>Tornien tiedot &copy; <a href="http://www.birdlife.fi/">BirdLife Suomi</a>, kaikki oikeudet pidätetään.</p>
 
 
                 <p id="credits">Toteutus: <strong>Mikko Heikkinen / <a href="http://www.biomi.org/">biomi.org</a></strong> | <a href="https://github.com/mikkohei13/retkikohteet">Code on Github</a></p>
