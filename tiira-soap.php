@@ -1,4 +1,5 @@
 <?php
+header('Content-Type: text/html; charset=utf-8');
 
 /*
 Tool to get data from Tiira-API (SOAP)
@@ -50,7 +51,7 @@ catch (Exception $e)
 //print_r ($result); // debug
 
 saveTowersAsJSON($result);
-
+//echoTowersAsTSV($result);
 
 echo "\n<br />END";
 
@@ -59,11 +60,11 @@ function saveTowersAsJSON($data)
 {
 	global $masterTowers; // data goes here
 
-	// Numeric id's could cause unintended sorting
 	$towersArr = $data->tornit->torni;
 
 	foreach ($towersArr as $key => $tower)
 	{
+		// Numeric id's could cause unintended sorting
 		$id = sha1($tower->paikka_id);
 
 		if (strpos($tower->nimi, "lintutorni"))
@@ -96,6 +97,20 @@ function saveTowersAsJSON($data)
 	}
 
 	writeFile(); // debug
+}
+function echoTowersAsTSV($data)
+{
+	$towersArr = $data->tornit->torni;
+	foreach ($towersArr as $key => $tower)
+	{
+		echo 
+			$tower->kunta . " " .
+			$tower->nimi . "\t" .
+			substr($tower->n_wgs84, 0, 8) . "\t" .
+			substr($tower->e_wgs84, 0, 8) . "\t" .
+			"wgs84" . "\n"
+		;
+	}
 }
 
 function writeFile()
