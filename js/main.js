@@ -42,7 +42,7 @@ function determineLocation(event)
     logData.longitude = position.coords.longitude;
 
     $.getJSON(
-      (rootUrl + "/api/towers/?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude),
+      (rootUrl + "api/?data=towers&lat=" + position.coords.latitude + "&lon=" + position.coords.longitude),
       updatePage
     );
 
@@ -66,7 +66,7 @@ function determineLocation(event)
 
            distance = Math.round(towersJSON[towerID].distance / 1000);
 
-           towerHTML = towersJSON[towerID].muni + ", " + towersJSON[towerID].tower + " " + distance + " km";
+           towerHTML = towersJSON[towerID].muni + ", " + towersJSON[towerID].name + " " + distance + " km";
            maplink = "<a href='https://www.google.fi/maps/dir/" + logData.latitude + "," + logData.longitude + "/" + towersJSON[towerID].lat + "," + towersJSON[towerID].lon + "/'>reitti</a>";
 
            console.log(towersJSON[towerID].muni);

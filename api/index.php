@@ -117,6 +117,9 @@ class TowersAPI {
 
 	public function sendData($data)
 	{
+//		print_r ($data); // debug
+		// Note that json viewer extension sorts the data by id (asc)
+
 		$json = json_encode($data);
 		header('Content-Type: application/json');
 		echo $json;
