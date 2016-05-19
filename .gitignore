@@ -1,6 +1,7 @@
 
 OLDs/*
 rawdata/*
+data-*
 js/vendor/*
 
 # =========================
