@@ -12,8 +12,8 @@ function determineLocation(event)
       displayError,
       {
         enableHighAccuracy: false,
-        timeout: 30000, // ms
-        maximumAge: 60000 // ms
+        timeout: 60000, // ms
+        maximumAge: 30000 // ms
       }
     );
     $( "#error-container" ).html( "<div>Sijaintiasi haetaan...</div>" );  
@@ -30,7 +30,8 @@ function determineLocation(event)
   function handlePosition(position) {
     if (position.coords.accuracy > 500)
     {
-      $( "#message-container" ).html( "<div>Tarkkaa sijaintiasi ei saatu selville, joten etäisyydet torneihin eivät ole tarkkoja. Jos käytät tietokonetta, kokeile mielummin älypuhelimella jossa on GPS! <span class='additional'>(virhesäde " + position.coords.accuracy + " m)</span></div>" );
+      var accuracyRounded = math.round((position.coords.accuracy / 1000));
+      $( "#message-container" ).html( "<div>Tarkkaa sijaintiasi ei saatu selville, joten etäisyydet torneihin eivät ole tarkkoja. Jos käytät tietokonetta, kokeile mielummin älypuhelimella jossa on GPS! <span class='additional'>(virhesäde " + accuracyRounded + " m)</span></div>" );
 
       logData.error = "inaccurate";
     }
