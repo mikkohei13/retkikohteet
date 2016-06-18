@@ -23,7 +23,7 @@ function determineLocation(event)
     console.log("navigator.geolocation not supported");
 
     logData.error = "not supported";
-//    logger();
+    logger();
 
   }
 
@@ -79,12 +79,12 @@ function determineLocation(event)
       }
 
 
-//      $( "#main-container" ).load( "allspecies.php?grid=" + towersJSON.N + ":" + towersJSON.E );
+      $( "#main-container" ).load( "allspecies.php?grid=" + towersJSON.N + ":" + towersJSON.E );
 
-//      logData.N = towersJSON.N;
-//      logData.E = towersJSON.E;
+      logData.N = towersJSON.N;
+      logData.E = towersJSON.E;
       logData.error = "success";
-//      logger();
+      logger();
   }
 
   function displayError(error) {
@@ -97,7 +97,7 @@ function determineLocation(event)
     $( "#error-container" ).html("<div>" + errors[error.code] + "</div>");
 
     logData.error = "error " + error.code;
-//    logger();
+    logger();
   }
 
   /*
@@ -113,14 +113,12 @@ function logger()
   logData.innerHeight = window.innerHeight;
   logData.innerWidth = window.innerWidth;
 
-//  console.log(navigator);
-//  console.log(window);
+  console.log(navigator);
+  console.log(window);
 
-/*
   $.post( "logger.php", logData, function( loggerResponse ) {
     console.log(loggerResponse);
   });
-*/
 }
 
 // Help link

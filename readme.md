@@ -27,12 +27,13 @@ DONE
 - Accuracy / timeout -settings
 - Oikea data w/ changed names
 - Tietosuojailmoitus
+- Logging
 
 TODO
+- hashaa ip loggerissa
 - Testaa että epätarkan koordinaatin pyöristys toimii tornisovelluksessa
 - Twitter & Facebook
 - Google Analytics
-- Logging?
 - lisää myös kotiseudun lintuihin
 - Ristiinlinkitys kotiseudun lintujen kanssa
 - Tarkista että ei luottamuksellista dataa gitissä

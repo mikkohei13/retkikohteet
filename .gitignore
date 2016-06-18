@@ -4,6 +4,7 @@ rawdata/*
 data-*
 js/vendor/*
 images/birdlife*
+logfiles*
 
 # =========================
 
