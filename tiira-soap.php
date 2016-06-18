@@ -48,10 +48,10 @@ catch (Exception $e)
 
 }
 
-print_r ($result); exit("Debug end"); // debug
+//print_r ($result); exit("Debug end"); // debug
 
 saveTowersAsJSON($result);
-//echoTowersAsTSV($result);
+//echoTowersAsTSV($result); // debug
 
 echo "\n<br />END";
 
@@ -101,22 +101,22 @@ function saveTowersAsJSON($data)
 		$masterTowers[$id]['type'] = $type;
 	}
 
-	writeFile(); // debug
+	writeFile();
 }
 
 function handleName($name)
 {
-	if (strpos($name, "Mulkku"))
+	if (strpos($name, "Mulkku") !== FALSE)
 	{
-		$name = str_replace("Mulkku", "Muikku", $name)
+		$name = str_replace("Mulkku", "Muikku", $name);
 	}
-	elseif (strpos($name, "Nyyn"))
+	elseif (strpos($name, "Nyyn") !== FALSE)
 	{
-		$name = str_replace("Nyyn", "Nyn", $name)
+		$name = str_replace("Nyyn", "Nyn", $name);
 	}
-	elseif (strpos($name, "Saanatunturin"))
+	elseif (strpos($name, "Saanatunturin") !== FALSE)
 	{
-		$name = str_replace("Saanatunturin", "Saanatunturi,", $name)
+		$name = str_replace("Saanatunturin", "Saanatunturi,", $name);
 	}
 
 	return $name;
