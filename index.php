@@ -114,7 +114,7 @@ header('Content-Type: text/html; charset=utf-8');
         </script>
 
         <?php
-        if (! $_GET['nolog'])
+        if (! @$_GET['nolog'])
         {
             include_once "../../googleanalytics.php";
         }
