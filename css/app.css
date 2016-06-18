@@ -35,6 +35,18 @@ body
 	margin: -10px 5px -3px 0px;
 }
 
+#birdlifelink
+{
+	float: right;
+	margin: 0 1em 0 0;
+}
+
+#birdlifelink img
+{
+	width: 85px;
+	height: 85px;
+}
+
 #header-container,
 #help-container,
 #main-container,

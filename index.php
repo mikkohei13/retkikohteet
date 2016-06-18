@@ -48,7 +48,10 @@ header('Content-Type: text/html; charset=utf-8');
         <div id="message-container"></div>
 
         <div id="main-container">
+
+            <a href="http://www.birdlife.fi/" id="birdlifelink"><img src="images/birdlife-suomi.svg.php" alt=""></a>
             <h1>Lähimmät lintutornit</h1>
+
             <ol id="towers">
                 
             </ol>
@@ -58,22 +61,18 @@ header('Content-Type: text/html; charset=utf-8');
         <div id="share-container">
             <div class="fb-share-button" data-href="http://www.biomi.org/" data-layout="button_count"></div>
             <a href="https://twitter.com/share" class="twitter-share-button" data-lang="fi" data-dnt="true">Twiittaa</a>
-<script>/*
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-*/</script>
+            <script>/*
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+            */</script>
         </div>
 
         <div id="footer-container">
             <footer class="wrapper">
 
-
                 <h3>Tietolähteet</h3>
                 <p>Tornien tiedot &copy; <a href="http://www.birdlife.fi/">BirdLife Suomi</a>, kaikki oikeudet pidätetään.</p>
 
-
                 <p id="credits">Toteutus: <strong>Mikko Heikkinen / <a href="http://www.biomi.org/">biomi.org</a></strong> | <a href="https://github.com/mikkohei13/retkikohteet">Code on Github</a></p>
-
-
 
             </footer>
         </div>
