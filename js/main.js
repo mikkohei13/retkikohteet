@@ -11,7 +11,7 @@ function determineLocation(event)
       handlePosition, 
       displayError,
       {
-        enableHighAccuracy: false,
+        enableHighAccuracy: true,
         timeout: 60000, // ms
         maximumAge: 30000 // ms
       }
