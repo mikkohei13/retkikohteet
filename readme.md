@@ -28,19 +28,19 @@ DONE
 - Oikea data w/ changed names
 - Tietosuojailmoitus
 - Logging
-
-TODO
-- Oikeudet lokikansioon Shellitissä
-- http -> https redirect Shellitissä
 - hashaa ip loggerissa
 - Poista turhat objectit consolesta
 - Näytä koordinaattitiedot consolessa
-- Testaa että epätarkan koordinaatin pyöristys toimii tornisovelluksessa
 - Twitter & Facebook
 - Google Analytics
-- lisää myös kotiseudun lintuihin
+- http -> https redirect Shellitissä
 - Ristiinlinkitys kotiseudun lintujen kanssa
+
+TODO
+- Testaa että epätarkan koordinaatin pyöristys toimii tornisovelluksessa
+- lisää myös kotiseudun lintuihin
 - Tarkista että ei luottamuksellista dataa gitissä
+- Muuta htaccessissa 302 -> 301 jos kaikki toimii
 
 AFTER RELEASE
 - (Miten self-signed cert Tursolle?)
