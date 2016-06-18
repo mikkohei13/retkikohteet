@@ -17,7 +17,7 @@ body
 
 #header-container h2
 {
-	margin: 0;
+	margin: 0 40px 0 0;
 	text-transform: uppercase;
 	font-weight: normal;
 }
@@ -32,20 +32,9 @@ body
 {
 	width: 40px;
 	height: 40px;
-	margin: -10px 5px -3px 0px;
+	margin: -10px 0px -3px 0px;
 }
 
-#birdlifelink
-{
-	float: right;
-	margin: 0 1em 0 0;
-}
-
-#birdlifelink img
-{
-	width: 85px;
-	height: 85px;
-}
 
 #header-container,
 #help-container,
@@ -184,6 +173,23 @@ h2
 	background-color: #1976D2;
 }
 
+.birdlifelink.topright
+{
+	float: right;
+	margin: 0 1em 0 0;
+}
+
+.birdlifelink.bottom
+{
+	margin: 0;
+	display: none;
+}
+
+.birdlifelink img
+{
+	width: 85px;
+	height: 85px;
+}
 
 
 @media only screen and (max-width: 400px) {
@@ -203,4 +209,26 @@ h2
 		height: 100px;
 	}
 
+	#header-container h2
+	{
+		font-size: 105%;
+	}
+
+	.birdlifelink.topright
+	{
+		display: none;
+	}
+
+	.birdlifelink.bottom
+	{
+		display: block;
+	}
+
+	h1
+	{
+		font-size: 140%;
+	}
+
 }
+
+

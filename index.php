@@ -49,12 +49,14 @@ header('Content-Type: text/html; charset=utf-8');
 
         <div id="main-container">
 
-            <a href="http://www.birdlife.fi/" id="birdlifelink"><img src="images/birdlife-suomi.svg.php" alt=""></a>
+            <a href="http://www.birdlife.fi/" class="birdlifelink topright"><img src="images/birdlife-suomi.svg.php" alt=""></a>
             <h1>Lähimmät lintutornit</h1>
 
             <ol id="towers">
                 
             </ol>
+
+            <a href="http://www.birdlife.fi/" class="birdlifelink bottom"><img src="images/birdlife-suomi.svg.php" alt=""></a>
 
         </div> <!-- #main-container -->
 
