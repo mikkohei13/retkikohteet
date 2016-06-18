@@ -35,6 +35,7 @@ TODO
 - Logging?
 - lisää myös kotiseudun lintuihin
 - Ristiinlinkitys kotiseudun lintujen kanssa
+- Tarkista että ei luottamuksellista dataa gitissä
 
 AFTER RELEASE
 - (Miten self-signed cert Tursolle?)

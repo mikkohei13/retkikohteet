@@ -67,7 +67,12 @@ function saveTowersAsJSON($data)
 		// Numeric id's could cause unintended sorting
 		$id = sha1($tower->paikka_id);
 
-		if (strpos($tower->nimi, "lintutorni"))
+		// Skip dismantled towers
+		if (strpos($tower->nimi, "purettu"))
+		{
+			continue;
+		}
+		elseif (strpos($tower->nimi, "lintutorni"))
 		{
 			$type = "lintutorni";
 		}
@@ -89,7 +94,7 @@ function saveTowersAsJSON($data)
 		}
 
 		$masterTowers[$id]['muni'] = $tower->kunta;
-		$masterTowers[$id]['name'] = $tower->nimi;
+		$masterTowers[$id]['name'] = handleName($tower->nimi);
 		$masterTowers[$id]['society'] = $tower->yhdistys;
 		$masterTowers[$id]['lat'] = substr($tower->n_wgs84, 0, 8);
 		$masterTowers[$id]['lon'] = substr($tower->e_wgs84, 0, 8);
@@ -98,6 +103,25 @@ function saveTowersAsJSON($data)
 
 	writeFile(); // debug
 }
+
+function handleName($name)
+{
+	if (strpos($name, "Mulkku"))
+	{
+		$name = str_replace("Mulkku", "Muikku", $name)
+	}
+	elseif (strpos($name, "Nyyn"))
+	{
+		$name = str_replace("Nyyn", "Nyn", $name)
+	}
+	elseif (strpos($name, "Saanatunturin"))
+	{
+		$name = str_replace("Saanatunturin", "Saanatunturi,", $name)
+	}
+
+	return $name;
+}
+
 function echoTowersAsTSV($data)
 {
 	$towersArr = $data->tornit->torni;
