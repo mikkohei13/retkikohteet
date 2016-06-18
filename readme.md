@@ -35,9 +35,10 @@ DONE
 - Google Analytics
 - http -> https redirect Shellitissä
 - Ristiinlinkitys kotiseudun lintujen kanssa
+- Testaa että epätarkan koordinaatin pyöristys toimii tornisovelluksessa
 
 TODO
-- Testaa että epätarkan koordinaatin pyöristys toimii tornisovelluksessa
+- Edge: hakeeko sivu allspecies.php:ta?
 - lisää myös kotiseudun lintuihin
 - Tarkista että ei luottamuksellista dataa gitissä
 - Muuta htaccessissa 302 -> 301 jos kaikki toimii

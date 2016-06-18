@@ -81,8 +81,6 @@ function determineLocation(event)
       }
 
 
-      $( "#main-container" ).load( "allspecies.php?grid=" + towersJSON.N + ":" + towersJSON.E );
-
       logData.N = towersJSON.N;
       logData.E = towersJSON.E;
       logData.error = "success";
