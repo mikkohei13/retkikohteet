@@ -4,6 +4,10 @@ header('Content-Type: text/html; charset=utf-8');
 /*
 Tool to get data from Tiira-API (SOAP)
 Based on: http://www.vankouteren.eu/blog/2009/03/simple-php-soap-example/
+
+Running this gets the latest data from the Tiira-API and saves it as a JSON file.
+.../retkikohteet/tiira-soap.php?secret=SECRETKEY
+
 */
 
 //require_once "../../retkikohteet-secret.php"; // development

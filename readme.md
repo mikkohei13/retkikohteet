@@ -26,12 +26,12 @@ DONE
 - Intro
 - Accuracy / timeout -settings
 - Oikea data w/ changed names
+- Tietosuojailmoitus
 
 TODO
-- testaa että epätarkan koordinaatin pyöristys toimii tornisovelluksessa
+- Testaa että epätarkan koordinaatin pyöristys toimii tornisovelluksessa
 - Twitter & Facebook
 - Google Analytics
-- Tietosuojailmoitus
 - Logging?
 - lisää myös kotiseudun lintuihin
 - Ristiinlinkitys kotiseudun lintujen kanssa
