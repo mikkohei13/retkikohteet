@@ -86,7 +86,7 @@ header('Content-Type: text/html; charset=utf-8');
             var logData = { };
             <?php
                 echo "logData.datetime = " . date("YmdHis") . ";\n";
-                echo "logData.ip = \"" . $_SERVER['REMOTE_ADDR'] . "\";\n";
+                echo "logData.ip = \"" . sha1($_SERVER['REMOTE_ADDR']) . "\";\n";
 
 
                 // Automatic base url, https://gist.github.com/mikkohei13/9312936

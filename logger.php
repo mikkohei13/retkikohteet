@@ -9,7 +9,7 @@ foreach ($_POST as $key => $value)
 }
 
 $logString =  
-	$logArray['ip'] . "\t" . 
+	$logArray['ip'] . "\t" . // IP hashed for privacy
 	$logArray['datetime'] . "\t" . 
 	$logArray['error'] . "\t" . 
 	$logArray['latitude'] . "\t" . 
@@ -28,7 +28,7 @@ $logSuccess = file_put_contents(($logDirectory . "/js-log.txt"), ($logString . "
 
 if ($logSuccess === FALSE)
 {
-//	echo "Logged data: $logString"; // debug
+//	echo "Log directory: $logDirectory Logged data: $logString"; // debug
 	echo "Log failure";
 }
 else

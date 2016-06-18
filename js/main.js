@@ -53,8 +53,8 @@ function determineLocation(event)
   // This is the meat
   function updatePage(towersJSON)
   {
-      console.log(towersJSON);
-      console.log("Success!");
+//      console.log(towersJSON); // debug
+      console.log("Page updating...");
       $( "#error-container" ).html("");
 
       // Update list
@@ -63,17 +63,19 @@ function determineLocation(event)
       var maplink;
       for(var towerID in towersJSON)
       {
-           console.log(towerID);
+//           console.log(towerID); // debug
 
            distance = Math.round(towersJSON[towerID].distance / 1000);
 
            towerHTML = towersJSON[towerID].muni + ", " + towersJSON[towerID].name + " " + distance + " km";
            maplink = "<a href='https://www.google.fi/maps/dir/" + logData.latitude + "," + logData.longitude + "/" + towersJSON[towerID].lat + "," + towersJSON[towerID].lon + "/'>reitti</a>";
 
+/*
+// Debug
            console.log(towersJSON[towerID].muni);
            console.log(towersJSON[towerID].tower);
            console.log(towersJSON[towerID].distance);
-
+*/
           $("#towers").append("<li>" + towerHTML + " " + maplink + "</li>");
 
       }
@@ -113,8 +115,11 @@ function logger()
   logData.innerHeight = window.innerHeight;
   logData.innerWidth = window.innerWidth;
 
+/*
+// Debug
   console.log(navigator);
   console.log(window);
+*/
 
   $.post( "logger.php", logData, function( loggerResponse ) {
     console.log(loggerResponse);

@@ -30,7 +30,11 @@ DONE
 - Logging
 
 TODO
+- Oikeudet lokikansioon Shellitissä
+- http -> https redirect Shellitissä
 - hashaa ip loggerissa
+- Poista turhat objectit consolesta
+- Näytä koordinaattitiedot consolessa
 - Testaa että epätarkan koordinaatin pyöristys toimii tornisovelluksessa
 - Twitter & Facebook
 - Google Analytics
