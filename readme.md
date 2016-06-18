@@ -27,12 +27,12 @@ DONE
 - Accuracy / timeout -settings
 
 TODO
+- testaa että epätarkan koordinaatin pyöristys toimii tornisovelluksessa
 - Oikea data w/ smoking gun
 - Twitter & Facebook
 - Google Analytics
 - Tietosuojailmoitus
 - Logging?
-- testaa että epätarkan koordinaatin pyöristys toimii tornisovelluksessa
 - lisää myös kotiseudun lintuihin
 - Ristiinlinkitys kotiseudun lintujen kanssa
 

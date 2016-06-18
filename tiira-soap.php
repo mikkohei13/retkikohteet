@@ -3,12 +3,12 @@ header('Content-Type: text/html; charset=utf-8');
 
 /*
 Tool to get data from Tiira-API (SOAP)
-
+Based on: http://www.vankouteren.eu/blog/2009/03/simple-php-soap-example/
 */
 
-// http://www.vankouteren.eu/blog/2009/03/simple-php-soap-example/
+//require_once "../../retkikohteet-secret.php"; // development
+require_once "../../retkikohteet-secret.php"; // production
 
-require_once "../../retkikohteet-secret.php";
 if ($_GET['secret'] != $localSecret)
 {
 	exit("secret parameter needed");
@@ -19,9 +19,9 @@ $masterTowers = Array();
 $clientOptions = Array();
 $clientOptions['login'] = $httpLogin;
 $clientOptions['password'] = $httpPassword;
-$clientOptions['trace'] = TRUE;
+$clientOptions['trace'] = TRUE; // records last request etc.
 
-$client = new SoapClient("http://testi.tiira.fi/ws/ws/v2/soapserver.php?wsdl", $clientOptions);
+$client = new SoapClient($soapUrl, $clientOptions);
 
 $params = Array();
 $params['sovellusavain'] = $apiKey;
@@ -48,7 +48,7 @@ catch (Exception $e)
 
 }
 
-//print_r ($result); // debug
+print_r ($result); exit("Debug end"); // debug
 
 saveTowersAsJSON($result);
 //echoTowersAsTSV($result);
