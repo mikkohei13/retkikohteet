@@ -20,17 +20,16 @@ Huomioita
 TODO
 ====
 
+- Accuracy / timeout -settings
 - Styles
-- Oikea data
+- Oikea data w/ smoking gun
 - Twitter & Facebook
 - Google Analytics
 - Tietosuojailmoitus
 - Logging?
 - testaa että epätarkan koordinaatin pyöristys toimii tornisovelluksessa
-- commitoi
 - lisää myös kotiseudun lintuihin
-- commitoi
-- Miten self-signed cert Tursolle?
+- (Miten self-signed cert Tursolle?)
 
 
 
