@@ -39,7 +39,7 @@ header('Content-Type: text/html; charset=utf-8');
 
 
         <div id="help-container">
-            <p>Introteksti
+            <p>Tämä sovellus hakee sijaintisi puhelimen GPS:lla tai tietokoneesi IP-osoitteen perusteella ja näyttää lähimpien lintutornien sijainnin. Sijainnin tarkkuus riippuu mm. puhelimesi ominaisuuksista ja asetuksista.
             </p>
 
         </div>

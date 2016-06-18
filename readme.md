@@ -20,8 +20,13 @@ Huomioita
 TODO
 ====
 
-- Accuracy / timeout -settings
+
+DONE
 - Styles
+- Intro
+
+TODO
+- Accuracy / timeout -settings
 - Oikea data w/ smoking gun
 - Twitter & Facebook
 - Google Analytics
@@ -29,12 +34,10 @@ TODO
 - Logging?
 - testaa että epätarkan koordinaatin pyöristys toimii tornisovelluksessa
 - lisää myös kotiseudun lintuihin
-- (Miten self-signed cert Tursolle?)
-
-
-
-RELEASE
 - Ristiinlinkitys kotiseudun lintujen kanssa
+
+AFTER RELEASE
+- (Miten self-signed cert Tursolle?)
 
 
 Ajatuksia
