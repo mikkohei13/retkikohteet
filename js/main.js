@@ -31,7 +31,7 @@ function determineLocation(event)
     if (position.coords.accuracy > 500)
     {
       var accuracyRounded = math.round((position.coords.accuracy / 1000));
-      $( "#message-container" ).html( "<div>Tarkkaa sijaintiasi ei saatu selville, joten etäisyydet torneihin eivät ole tarkkoja. Jos käytät tietokonetta, kokeile mielummin älypuhelimella jossa on GPS! <span class='additional'>(virhesäde " + accuracyRounded + " m)</span></div>" );
+      $( "#message-container" ).html( "<div>Tarkkaa sijaintiasi ei saatu selville, joten etäisyydet torneihin eivät ole tarkkoja. Jos käytät tietokonetta, kokeile mielummin älypuhelimella jossa on GPS! <span class='additional'>(virhesäde " + accuracyRounded + " km)</span></div>" );
 
       logData.error = "inaccurate";
     }
