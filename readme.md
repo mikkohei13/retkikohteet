@@ -25,10 +25,10 @@ DONE
 - Styles
 - Intro
 - Accuracy / timeout -settings
+- Oikea data w/ changed names
 
 TODO
 - testaa että epätarkan koordinaatin pyöristys toimii tornisovelluksessa
-- Oikea data w/ smoking gun
 - Twitter & Facebook
 - Google Analytics
 - Tietosuojailmoitus
