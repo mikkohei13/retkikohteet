@@ -206,6 +206,12 @@ h2
 	margin-left: 10px;
 }
 
+#seealso
+{
+	font-weight: bold;
+}
+
+
 @media only screen and (max-width: 400px) {
 
 	.species .icon

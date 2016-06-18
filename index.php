@@ -56,16 +56,18 @@ header('Content-Type: text/html; charset=utf-8');
                 
             </ol>
 
+            <p id="seealso"><a href="/kotiseudun-linnut/">Katso myös mitä lintuja tällä alueella pesii</a></p>
+
             <a href="http://www.birdlife.fi/" class="birdlifelink bottom"><img src="images/birdlife-suomi.svg.php" alt=""></a>
 
         </div> <!-- #main-container -->
 
         <div id="share-container">
-            <div class="fb-share-button" data-href="http://www.biomi.org/" data-layout="button_count"></div>
+            <div class="fb-share-button" data-href="http://www.biomi.org/retkelle/" data-layout="button_count"></div>
             <a href="https://twitter.com/share" class="twitter-share-button" data-lang="fi" data-dnt="true">Twiittaa</a>
-            <script>/*
+            <script>
             !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-            */</script>
+            </script>
         </div>
 
         <div id="footer-container">
@@ -88,7 +90,6 @@ header('Content-Type: text/html; charset=utf-8');
                 echo "logData.datetime = " . date("YmdHis") . ";\n";
                 echo "logData.ip = \"" . sha1($_SERVER['REMOTE_ADDR']) . "\";\n";
 
-
                 // Automatic base url, https://gist.github.com/mikkohei13/9312936
                 $base_url = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
                 $base_url .= "://".$_SERVER['HTTP_HOST'];
@@ -101,8 +102,8 @@ header('Content-Type: text/html; charset=utf-8');
         <script src="js/main.js"></script>
 
         <div id="fb-root"></div>
+
         <script>
-/*
         (function(d, s, id) {
           var js, fjs = d.getElementsByTagName(s)[0];
           if (d.getElementById(id)) return;
@@ -110,13 +111,14 @@ header('Content-Type: text/html; charset=utf-8');
           js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
-*/
         </script>
 
-
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <?php // include_once "../../googleanalytics.html"; ?>
+        <?php
+        if (! $_GET['nolog'])
+        {
+            include_once "../../googleanalytics.php";
+        }
+        ?>
 
     </body>
 </html>
