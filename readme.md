@@ -26,6 +26,13 @@ TODO
 - Google Analytics
 - Tietosuojailmoitus
 - Logging?
+- testaa että epätarkan koordinaatin pyöristys toimii tornisovelluksessa
+- commitoi
+- lisää myös kotiseudun lintuihin
+- commitoi
+- Miten self-signed cert Tursolle?
+
+
 
 RELEASE
 - Ristiinlinkitys kotiseudun lintujen kanssa
