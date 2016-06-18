@@ -1,3 +1,7 @@
+<?php
+header('Content-Type: text/html; charset=utf-8');
+?>
+<pre>
 Tietosuojaseloste biomi.org -paikkatietosovellusten käyttörekisteristä – yhdistetty rekisteriseloste ja informointiasiakirja
 Henkilötietolaki (523/99) 10 ja 24 §
 Tämän version laatimispäivämäärä: 18.6.2016
@@ -49,3 +53,4 @@ Korjaamispyyntö on syytä tehdä kirjallisesti ja riittävän yksilöidysti: py
 
 Muut mahdolliset oikeudet
 Henkilötietoja ei käytetä eikä luovuteta käytettäväksi suoramainontaa, etämyyntiä ja muuta suoramarkkinointia eikä markkina- ja mielipidetutkimusta eikä henkilömatrikkelia ja sukututkimusta varten.
+</pre>
