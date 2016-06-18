@@ -8,7 +8,7 @@ header('Content-Type: text/html; charset=utf-8');
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Löydä lähin lintutorni</title>
-        <meta name="description" content="">
+        <meta name="description" content="Sovellus joka näyttää lähimmät lintutornit.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
