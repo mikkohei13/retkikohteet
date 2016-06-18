@@ -24,9 +24,9 @@ TODO
 DONE
 - Styles
 - Intro
+- Accuracy / timeout -settings
 
 TODO
-- Accuracy / timeout -settings
 - Oikea data w/ smoking gun
 - Twitter & Facebook
 - Google Analytics
