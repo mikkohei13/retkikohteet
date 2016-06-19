@@ -128,7 +128,7 @@ function logger()
 $( "#helplink" ).click(function() {
 
   $( "#help-container" ).slideToggle( 200, function() {
-    console.log("Help slided open");
+    console.log("Help toggle");
   });
 
 

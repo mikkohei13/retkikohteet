@@ -211,6 +211,20 @@ h2
 	font-weight: bold;
 }
 
+/*Material design 2*/
+#header-container,
+#footer-container #credits
+{
+	background-color: #0097A7;
+}
+#footer-container
+{
+	background-color: #00BCD4;
+}
+#share-container
+{
+}
+
 
 @media only screen and (max-width: 400px) {
 
