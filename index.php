@@ -78,6 +78,9 @@ header('Content-Type: text/html; charset=utf-8');
                 <h3>Tietolähteet</h3>
                 <p>Tornien tiedot &copy; <a href="http://www.birdlife.fi/">BirdLife Suomi</a>, kaikki oikeudet pidätetään.</p>
 
+                <h3>Tietosuoja</h3>
+                <p>Palvelu tallettaa käyttäjän sijainnin ja selaimen ominaisuuksia, mutta ei henkilötietoja. Palvelun käyttöä seurataan <a href="https://www.google.com/policies/privacy/partners/">Google Analytics:in</a> ja evästeiden avulla. Voit halutessasi estää evästeiden käytön selaimestasi.</p>
+
                 <p id="credits">Toteutus: <strong>Mikko Heikkinen / <a href="http://www.biomi.org/">biomi.org</a></strong> | <a href="https://github.com/mikkohei13/retkikohteet">Code on Github</a> | <a href="tietosuojaseloste/">Tietosuojaseloste</a></p>
 
             </footer>

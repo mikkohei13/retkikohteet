@@ -38,6 +38,7 @@ DONE
 MUST
 
 SHOULD
+- Kaikki tornit kartalle
 - Muuta htaccessissa 302 -> 301 jos kaikki toimii
 - BL:n logo paremmin
 - Dokumentaatio
