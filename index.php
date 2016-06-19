@@ -56,8 +56,6 @@ header('Content-Type: text/html; charset=utf-8');
                 
             </ol>
 
-            <p id="seealso"><a href="/kotiseudun-linnut/">Katso myös mitä lintuja tällä alueella pesii</a></p>
-
             <a href="http://www.birdlife.fi/" class="birdlifelink bottom"><img src="images/birdlife-suomi.svg.php" alt=""></a>
 
         </div> <!-- #main-container -->
@@ -68,6 +66,10 @@ header('Content-Type: text/html; charset=utf-8');
             <script>
             !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
             </script>
+
+            <p id="seealso"><a href="/kotiseudun-linnut/">Katso myös mitä lintuja tällä alueella pesii</a></p>
+            <p id="feedback"><a href='http://goo.gl/forms/Xgh1Lpf1u5TjwEXD2'>Palaute</a></p>
+
         </div>
 
         <div id="footer-container">

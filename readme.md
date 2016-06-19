@@ -1,15 +1,10 @@
 
 Sovellus joka kertoo lähimpien lintutornien sijainnin. (Ja myöhemmin ehkä myös muita kohteita.)
 
-Tapoja hakea lähimmät tornit
-- MongoDB; vaatii ajurin palvelimelle (esim. OVH) ja tietokannan (esim. Mlab, OVH)
-	- 2dsphere-indeksi ja near-hakuparametri
-- Elastic; vaatii ajurin palvelimelle ja tietokannan
-- (TÄMÄ TOTEUTETTU) JSON & PHP; vaatii että etäisyys lasketaan joka kerta jokaiselle pisteelle, tai että pisteiden määrää rajataan aluksi muulla tavoin.
+Data tallennettu JSON-muotoon. Lähimmät tornit haetaan näin:
+- poimitaan osajoukko lähimpiä torneja käyttäjää ympäröivästä bounding boxista
+- lasketaan etäisyys jokaiselle osajoukon tornille
 
-http://geojson.org/
-https://docs.mongodb.com/v3.2/reference/operator/query/near/#op._S_near
-https://docs.mongodb.com/v3.2/core/2dsphere/
 
 Huomioita
 =========
@@ -37,19 +32,19 @@ DONE
 - Ristiinlinkitys kotiseudun lintujen kanssa
 - Testaa että epätarkan koordinaatin pyöristys toimii tornisovelluksessa
 - Edge: hakeeko sivu allspecies.php:ta?
-
-TODO
+- Uusi väritys
 - Tarkista että ei luottamuksellista dataa gitissä
-- Muuta htaccessissa 302 -> 301 jos kaikki toimii
 
-AFTER RELEASE
+MUST
+
+SHOULD
+- Muuta htaccessissa 302 -> 301 jos kaikki toimii
+- BL:n logo paremmin
+- Dokumentaatio
 - (Miten self-signed cert Tursolle?)
 
-
-Ajatuksia
-=========
-
+NICE
 - Etäisyys tietä pitkin, auto & kevyt liikenne; https://developers.google.com/maps/documentation/distance-matrix/intro
 - Tornin tyyppi
-
+- Ajo-ohje tornin parkkipaikalle; nyt torni ei aina ole saavutettavissa lähimmältä tieltä (esim. Fiskarsinmäki). Vaatisi tätä tietoa alkuperäiseen dataan.
 
