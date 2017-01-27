@@ -66,6 +66,8 @@ function saveTowersAsJSON($data)
 
 	$towersArr = $data->tornit->torni;
 
+//	print_r ($towersArr); exit(); // debug
+
 	foreach ($towersArr as $key => $tower)
 	{
 		// Numeric id's could cause unintended sorting

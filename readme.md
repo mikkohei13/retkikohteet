@@ -12,6 +12,34 @@ Huomioita
 - Raakadatan pitää olla UTF-8 -muodossa, muuten json_encode epäonnistuu
 - JSON:issa id:n kannattaa olla ei-numeerinen, muuten järjestys voi muuttua
 
+- Tiiran tornidata on muotoa (saatavissa erillisellä luvalla):
+
+    [0] => stdClass Object
+        (
+            [paikka_id] => 1103
+            [kunta] => Akaa
+            [nimi] => Toijala Terisjärvi torni
+            [yhdistys] => Pirkanmaan Lintutieteellinen Yhdistys ry
+            [e_tm35fim] => 333627.843507321
+            [n_tm35fim] => 6787759.25745819
+            [e_wgs84] => 23.9047312719029
+            [n_wgs84] => 61.1888284223278
+        )
+
+    [1] => stdClass Object
+        (
+            [paikka_id] => 5207983
+            [kunta] => Alajärvi
+            [nimi] => Lehtimäki, Verijärvi, lintutorni
+            [yhdistys] => Suomenselän Lintutieteellinen Yhdistys ry
+            [e_tm35fim] => 334415.734429835
+            [n_tm35fim] => 6972786.90328758
+            [e_wgs84] => 23.7469074813067
+            [n_wgs84] => 62.8475390323165
+        )
+
+
+
 TODO
 ====
 
