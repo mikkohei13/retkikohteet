@@ -1,5 +1,7 @@
 <?php
 header('Content-Type: text/html; charset=utf-8');
+//$cacheBuster = "?v=" . rand(0, 100000);
+$cacheBuster = "?v=" . "6"; // Manual versioning
 ?>
 
 <!doctype html>
@@ -16,7 +18,7 @@ header('Content-Type: text/html; charset=utf-8');
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/app.css<?php echo $cacheBuster; ?>">
 
         <!--[if lt IE 9]>
             <script src="js/vendor/html5-3.6-respond-1.4.2.min.js"></script>
@@ -114,7 +116,7 @@ header('Content-Type: text/html; charset=utf-8');
 
             ?>
         </script>
-        <script src="js/main.js"></script>
+        <script src="js/main.js<?php echo $cacheBuster; ?>"></script>
 
         <div id="fb-root"></div>
 

@@ -64,15 +64,17 @@ DONE
 - Tarkista että ei luottamuksellista dataa gitissä
 
 MUST
+-
 
 SHOULD
-- Kaikki tornit kartalle
+- Yritä ensin saada tarkat koordinaatit, ennen timeoutia yritä uudelleen saada epätarkemmat?
+- Järkevä virheilmoitus, jos koordinaatit ulkomailta
 - Muuta htaccessissa 302 -> 301 jos kaikki toimii
-- BL:n logo paremmin
 - Dokumentaatio
-- (Miten self-signed cert Tursolle?)
 
 NICE
+- Self-signed cert Tursolle kehitystä varten
+- Kaikki tornit kartalle
 - Etäisyys tietä pitkin, auto & kevyt liikenne; https://developers.google.com/maps/documentation/distance-matrix/intro
 - Tornin tyyppi
 - Ajo-ohje tornin parkkipaikalle; nyt torni ei aina ole saavutettavissa lähimmältä tieltä (esim. Fiskarsinmäki). Vaatisi tätä tietoa alkuperäiseen dataan.
