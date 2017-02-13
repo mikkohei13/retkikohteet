@@ -12,12 +12,11 @@ header('Content-Type: text/html; charset=utf-8');
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link href='https://fonts.googleapis.com/css?family=Raleway:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Raleway:400,700,400italic,700italic' rel='stylesheet'>
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/app.css">
-
 
         <!--[if lt IE 9]>
             <script src="js/vendor/html5-3.6-respond-1.4.2.min.js"></script>
@@ -79,9 +78,20 @@ header('Content-Type: text/html; charset=utf-8');
                 <p>Tornien tiedot &copy; <a href="http://www.birdlife.fi/">BirdLife Suomi</a>, kaikki oikeudet pidätetään.</p>
 
                 <h3>Tietosuoja</h3>
-                <p>Palvelu tallettaa käyttäjän sijainnin ja selaimen ominaisuuksia, mutta ei henkilötietoja. Palvelun käyttöä seurataan <a href="https://www.google.com/policies/privacy/partners/">Google Analytics:in</a> ja evästeiden avulla. Voit halutessasi estää evästeiden käytön selaimestasi.</p>
+                <p>Palvelu tallettaa käyttäjän sijainnin ja selaimen ominaisuuksia, mutta ei henkilötietoja. Palvelun käyttöä seurataan <a href="https://www.google.com/policies/privacy/partners/">Google Analytics:in</a> ja evästeiden avulla. Voit halutessasi estää evästeiden käytön selaimestasi. <a href="tietosuojaseloste/">Tietosuojaseloste</a></p>
 
-                <p id="credits">Toteutus: <strong>Mikko Heikkinen / <a href="http://www.biomi.org/">biomi.org</a></strong> | <a href="https://github.com/mikkohei13/retkikohteet">Code on Github</a> | <a href="tietosuojaseloste/">Tietosuojaseloste</a></p>
+                <div id="credits">
+                    <p>
+                        <a href="https://www.biomi.org/">
+                            <img src="images/biomi-kotka.png" alt="" />
+                            <br />
+                            Mikko Heikkinen / biomi.org
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://github.com/mikkohei13/retkikohteet">Code on Github</a>
+                    </p>
+                </div>
 
             </footer>
         </div>

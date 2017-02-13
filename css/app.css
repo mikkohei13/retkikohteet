@@ -4,10 +4,10 @@ body
 	font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
-
 #header-container
 {
 	background-color: #1976D2;
+	background-color: #0097A7; /* MD teal */
 	color: #fff;
 	/*
 	position: fixed;
@@ -43,6 +43,14 @@ body
 #footer-container
 {
 	padding: 10px;
+}
+
+#main-container {
+	padding-bottom: 0; /* compensates padding caused by <li> margin */
+}
+
+h1 {
+	margin-top: 0.2em;
 }
 
 #share-container
@@ -149,7 +157,7 @@ h2
 
 #footer-container
 {
-	background-color: #2196F3;
+	background-color: #0097A7; /* MD teal */
 	color: #fff;
 }
 
@@ -158,20 +166,45 @@ h2
 	color: #BBDEFB;
 }
 
-
+/*
 #footer-container h3,
 #footer-container h4,
 #footer-container p
 {
 	margin: 0 0 5px 0;
 }
+*/
+
+#footer-container h3 {
+	margin: 0.4em 0 0 0;
+}
+
+#footer-container h3:first-child {
+	margin-top: 0;
+}
+
+#footer-container p {
+	margin: 0 0 0 0;
+}
+
 
 #footer-container #credits
 {
+	text-align: center;
 	margin: 10px -10px -10px -10px;
-	padding: 10px;
-	background-color: #1976D2;
+	padding: 20px 10px 10px 10px;
+	color: #333;
+	background-color: #fff;
 }
+
+#footer-container #credits a {
+	text-decoration: none;
+	color: #0d457f; /* biomi blue */
+}
+
+
+
+
 
 .birdlifelink.topright
 {
@@ -189,6 +222,12 @@ h2
 {
 	width: 85px;
 	height: 85px;
+}
+
+#towers {
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
 }
 
 #towers li
@@ -211,18 +250,8 @@ h2
 	font-weight: bold;
 }
 
-/*Material design 2*/
-#header-container,
-#footer-container #credits
-{
-	background-color: #0097A7;
-}
-#footer-container
-{
-	background-color: #00BCD4;
-}
-#share-container
-{
+#feedback {
+	margin: -0.2em 0 0 0;
 }
 
 
