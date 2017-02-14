@@ -12,7 +12,7 @@ $cacheBuster = "?v=" . "6"; // Manual versioning
         <title>Löydä lähin lintutorni</title>
         <meta name="description" content="Sovellus joka näyttää lähimmät lintutornit.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <meta name="theme-color" content="#0097A7">
 
         <link href='https://fonts.googleapis.com/css?family=Raleway:400,700,400italic,700italic' rel='stylesheet'>
 
